@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Curiosos - Los Simpson</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #87CEEB 0%, #FFD700 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #FF6B00;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 3px 3px 0 #000;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .personaje {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: flex;
+            flex-wrap: wrap;
+            transition: transform 0.3s;
+        }
+
+        .personaje:hover {
+            transform: translateY(-8px);
+        }
+
+        .personaje:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .imagen {
+            flex: 1 1 350px;
+            min-height: 400px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .imagen img {
+            max-width: 100%;
+            max-height: 380px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+
+        .info {
+            flex: 1 1 400px;
+            padding: 40px;
+        }
+
+        .info h2 {
+            font-size: 2.4rem;
+            color: #FF6B00;
+            margin-bottom: 15px;
+            border-bottom: 4px solid #FFD700;
+            padding-bottom: 10px;
+        }
+
+        .info ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .info li {
+            background: #FFF8DC;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            border-radius: 12px;
+            border-left: 6px solid #FF6B00;
+            font-size: 1.15rem;
+            position: relative;
+        }
+
+        .info li::before {
+            content: "★";
+            color: #FF6B00;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .personaje, .personaje:nth-child(even) {
+                flex-direction: column;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
+            .info {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Datos Curiosos de Los Simpson!</h1>
+        <p>Lisa • Bart • Maggie • Homero • Marge • Abuelo Abraham</p>
+    </header>
+
+    <div class="container">
+
+        <!-- ABUELO ABRAHAM -->
+        <div class="personaje">
+            <div class="imagen">
+                <img src="images/lol.jpg" alt="Abuelo Abraham Simpson">
+            </div>
+            <div class="info">
+                <h2>Abuelo Abraham "Abe" Simpson</h2>
+                <ul>
+                    <li>Es un veterano de la Segunda Guerra Mundial y cuenta historias larguísimas e incoherentes que casi nunca tienen final.</li>
+                    <li>Su nombre completo es Abraham Jay Simpson II. Tiene al menos dos hijos ilegítimos: Herbert Powell y Abbey.</li>
+                    <li>En una ocasión afirmó que casi mató a Hitler con una jabalina en los Juegos Olímpicos de 1936 (aunque la historia cambia cada vez que la cuenta).</li>
+                    <li>Vive en el Castillo de Retiro de Springfield porque Homero lo envió allí poco después de mudarse con la familia.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- HOMERO -->
+        <div class="personaje">
+            <div class="imagen">
+                <img src="images/homer.avif" alt="Homero Simpson">
+            </div>
+            <div class="info">
+                <h2>Homero Jay Simpson</h2>
+                <ul>
+                    <li>Su famosa expresión "¡D'oh!" se escribía originalmente en los guiones como "annoyed grunt" y fue incluida en el Diccionario Oxford en 2001.</li>
+                    <li>El pelo de la nuca y la oreja de Homero forman las iniciales "M" y "G" de Matt Groening, el creador de la serie.</li>
+                    <li>Su correo electrónico real es ChunkyLover53@aol.com (aunque solo responde con mensajes automáticos).</li>
+                    <li>Según su carnet de conducir mide 1,76 m, pesa 108 kg y nació el 12 de mayo de 1956 (aunque su edad cambia constantemente en la serie).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- MARGE -->
+        <div class="personaje">
+            <div class="imagen">
+                <img src="images/marg.jpg" alt="Marge Simpson">
+            </div>
+            <div class="info">
+                <h2>Marge Bouvier Simpson</h2>
+                <ul>
+                    <li>Su nombre real es Marjorie. Se inspira en la madre de Matt Groening (Margaret) y en su tía.</li>
+                    <li>Se tiñe el pelo de azul desde los 15 años porque empezó a canear muy joven. El tono exacto se conoce como "azul 56".</li>
+                    <li>Es una de las pocas personajes principales que no tiene segundo nombre (junto a Maggie).</li>
+                    <li>En el videojuego de 1991 se puede ver que debajo de su enorme peinado tiene orejas de conejo (una teoría que nunca se confirmó oficialmente).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- BART -->
+        <div class="personaje">
+            <div class="imagen">
+                <img src="images/bart.jpg" alt="Bart Simpson">
+            </div>
+            <div class="info">
+                <h2>Bart Simpson</h2>
+                <ul>
+                    <li>Su nombre completo es Bartholomew JoJo Simpson. "Bart" es un anagrama de "brat" (mocoso en inglés).</li>
+                    <li>Su pelo siempre tiene exactamente nueve puntas. Nunca cambia.</li>
+                    <li>Fue el personaje principal original de la serie; Homero se convirtió en el protagonista más adelante.</li>
+                    <li>Su primera palabra fue "¡Ay, caramba!". Es zurdo (como la mayoría de los personajes de la serie).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- LISA -->
+        <div class="personaje">
+            <div class="imagen">
+                <img src="images/octavo.jpg" alt="Lisa Simpson">
+            </div>
+            <div class="info">
+                <h2>Lisa Marie Simpson</h2>
+                <ul>
+                    <li>Tiene un coeficiente intelectual de 159 (el segundo más alto de la familia después de Maggie).</li>
+                    <li>Es vegetariana desde el episodio con Paul y Linda McCartney, quienes pusieron como condición que permaneciera vegetariana para siempre.</li>
+                    <li>Su nombre completo es Elizabeth Marie Simpson y se inspiró en una de las hermanas reales de Matt Groening.</li>
+                    <li>Es la única de los tres hijos que tiene un segundo nombre oficial confirmado (Marie).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- MAGGIE -->
+        <div class="personaje">
+            <div class="imagen">
+                <img src="images/l.webp" alt="Maggie Simpson">
+            </div>
+            <div class="info">
+                <h2>Maggie Simpson</h2>
+                <ul>
+                    <li>El sonido del chupete lo hace el propio Matt Groening con la boca.</li>
+                    <li>En los títulos de crédito originales, cuando la pasan por el escáner del supermercado aparece el precio de 847,63 dólares (el costo promedio mensual de criar a un bebé en EE.UU. en 1989).</li>
+                    <li>Tiene el coeficiente intelectual más alto de toda la familia Simpson: 167.</li>
+                    <li>Fue quien disparó al Sr. Burns en el famoso episodio de dos partes "¿Quién mató al Sr. Burns?".</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Hecho con 💛 para los fans de Los Simpson • Datos curiosos recopilados de la serie y fuentes oficiales
+    </footer>
+</body>
+</html>
